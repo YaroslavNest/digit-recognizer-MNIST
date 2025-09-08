@@ -1,0 +1,7 @@
+﻿numpy
+pandas
+scikit-learn
+torch
+torchvision
+tqdm
+catboost
