@@ -1,7 +1,7 @@
-﻿numpy
-pandas
-scikit-learn
-torch
-torchvision
-tqdm
-catboost
+numpy==1.24.4
+pandas==1.5.3
+scikit-learn==1.2.2
+torch==2.0.1
+torchvision==0.15.2
+tqdm==4.66.1
+catboost==1.2.2
