@@ -2,6 +2,7 @@
 
 Educational project: Kaggle **Digit Recognizer** competition. Path from a simple tabular baseline (CatBoost) to MLP and then CNN.
 
+> This repository is intentionally lightweight. All experimentation lives in notebooks, and no attempt is made to provide a production-ready package, automated tests, or CI.
 
 ## Progress
 
@@ -51,7 +52,6 @@ During training, I experimented with various hyperparameters and methods — cha
 
 - `notebooks/` — all notebooks (CatBoost, MLP, CNN)
 - `submissions/` — Kaggle submission files
-- `src/` — code for data loading / training (to be added later)
 - `data/` — local competition data (ignored by git)
 - `models/` — saved model weights (ignored by git)
 
@@ -60,6 +60,7 @@ During training, I experimented with various hyperparameters and methods — cha
 
 1. `pip install -r requirements.txt`  
 2. Download `train.csv` / `test.csv` from the Kaggle competition and put them into `data/`  
-3. Open the notebook in `notebooks/` or later run training scripts from `src/`
+3. Open any notebook in `notebooks/` to reproduce the experiments
+
 
 
