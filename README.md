@@ -8,7 +8,9 @@ Educational project: Kaggle **Digit Recognizer** competition. Path from a simple
 - **CatBoost baseline:** 0.96328  
 - **MLP baseline:** 0.97703  
 - **Improved MLP (with seed averaging):** 0.99367 *(without seed averaging:  0.994)*
-- **Next steps:** enhanced MLP → compact CNN (~0.99+ expected)
+- **CNN_v1:** 0.99207  
+- **CNN_v2 (final):** 🏁 **0.99560**  
+- **Status:** competition completed
 
 
 ## Update — Improved MLP with Seed Averaging
@@ -27,9 +29,16 @@ This version significantly extends the baseline MLP with multiple practical impr
 > so future experiments continue from that version (without seed averaging) toward a compact CNN.
 
 
+## Final step — CNN models
+
+Added a new notebook: `digit-recognizer-mnist-cnn.ipynb`
+
+This notebook contains two convolutional neural network models trained on the MNIST dataset.
+
+
 ## Structure
 
-- `notebooks/` — single notebook with CatBoost + MLP baselines (and improved versions)
+- `notebooks/` — all notebooks (CatBoost, MLP, CNN)
 - `submissions/` — Kaggle submission files
 - `src/` — code for data loading / training (to be added later)
 - `data/` — local competition data (ignored by git)
@@ -41,3 +50,4 @@ This version significantly extends the baseline MLP with multiple practical impr
 1. `pip install -r requirements.txt`  
 2. Download `train.csv` / `test.csv` from the Kaggle competition and put them into `data/`  
 3. Open the notebook in `notebooks/` or later run training scripts from `src/`
+
